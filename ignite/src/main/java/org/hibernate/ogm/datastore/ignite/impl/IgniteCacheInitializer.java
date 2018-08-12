@@ -320,6 +320,9 @@ public class IgniteCacheInitializer extends BaseSchemaDefiner {
 		if ( Character.class.equals( returnedClass ) ) {
 			return STRING_CLASS_NAME;
 		}
+		if ( UUID.class.equals( returnedClass ) ) {
+			return STRING_CLASS_NAME;
+		}
 		return returnedClass.getName();
 	}
 
